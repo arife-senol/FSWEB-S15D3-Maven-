@@ -34,8 +34,8 @@ public class MainTest {
     @Test
     public void testTaskAccessModifiers() throws NoSuchFieldException {
         Field idFields = employees.get(0).getClass().getDeclaredField("id");
-        Field firstnameFields = employees.get(0).getClass().getDeclaredField("firstname");
-        Field lastnameFields = employees.get(0).getClass().getDeclaredField("lastname");
+        Field firstnameFields = employees.get(0).getClass().getDeclaredField("firstName");
+        Field lastnameFields = employees.get(0).getClass().getDeclaredField("lastName");
 
         assertEquals(idFields.getModifiers(), 2);
         assertEquals(firstnameFields.getModifiers(), 2);
